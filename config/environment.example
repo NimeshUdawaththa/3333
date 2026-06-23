@@ -1,0 +1,111 @@
+# Environment Configuration Template
+# Copy this file to .env and update values accordingly
+
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=app_user
+DB_PASS=App@Secure123
+DB_NAME=smart_student_management
+DB_CHARSET=utf8mb4
+
+# Application Settings
+APP_NAME=Smart Student Management System
+APP_VERSION=1.0.0
+APP_ENV=development
+APP_DEBUG=true
+BASE_URL=http://localhost/Smart-Student-Management-System
+TIMEZONE=Asia/Colombo
+
+# Session Configuration
+SESSION_TIMEOUT=1800
+SESSION_NAME=SSMS_SESSION
+
+# Authentication
+JWT_SECRET=your_super_secret_key_change_in_production
+JWT_ALGORITHM=HS256
+JWT_EXPIRY=900
+
+# Face Recognition Settings
+FACE_RECOGNITION_API=http://localhost:5000
+FACE_RECOGNITION_THRESHOLD=0.6
+FACE_RECOGNITION_MODEL=hog
+MIN_ATTENDANCE_PERCENTAGE=75
+
+# File Upload Settings
+MAX_UPLOAD_SIZE=52428800
+ALLOWED_FILE_TYPES=pdf,doc,docx,xls,xlsx,ppt,pptx,jpg,jpeg,png,gif
+UPLOAD_DIR=/uploads
+FACE_ENCODING_DIR=/uploads/face_encodings
+FACE_IMAGE_DIR=/uploads/face_images
+
+# Email Configuration (Optional)
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USER=your-email@gmail.com
+MAIL_PASS=your-app-password
+MAIL_FROM=noreply@ssms.edu
+MAIL_FROM_NAME=Smart Student Management System
+
+# Logging
+LOG_LEVEL=debug
+LOG_FILE=/var/log/ssms.log
+
+# Security
+CORS_ORIGINS=http://localhost:3000,http://localhost
+ENABLE_HTTPS=false
+SECURE_COOKIES=false
+
+# Rate Limiting
+RATE_LIMIT_ENABLED=true
+RATE_LIMIT_REQUESTS=100
+RATE_LIMIT_WINDOW=3600
+
+# Cache Settings
+CACHE_ENABLED=true
+CACHE_DRIVER=file
+CACHE_TTL=3600
+
+# API Keys
+API_KEY_ADMIN=admin_key_here
+API_KEY_SYSTEM=system_key_here
+
+# Grades Configuration
+GRADE_A_MIN=90
+GRADE_B_PLUS_MIN=80
+GRADE_B_MIN=70
+GRADE_C_PLUS_MIN=60
+GRADE_C_MIN=50
+GRADE_D_MIN=40
+
+# Attendance Settings
+ATTENDANCE_MARKING_START_TIME=08:00
+ATTENDANCE_MARKING_END_TIME=18:00
+LATE_MARK_AFTER_MINUTES=15
+
+# Python/AI Module
+PYTHON_PATH=C:\Python39\python.exe
+FLASK_DEBUG=True
+FLASK_ENV=development
+
+# Development Mode Settings
+ALLOW_INSECURE_LOGIN=false
+ENABLE_TEST_DATA=false
+ENABLE_MOCK_FACE_RECOGNITION=false
+
+# Backup Settings
+BACKUP_ENABLED=true
+BACKUP_FREQUENCY=daily
+BACKUP_RETENTION_DAYS=30
+BACKUP_DIR=/backups
+
+# Notification Settings
+ENABLE_SMS_NOTIFICATIONS=false
+ENABLE_EMAIL_NOTIFICATIONS=true
+SMS_API_KEY=
+SMS_API_URL=
+
+# Third-party Services
+GOOGLE_API_KEY=
+AWS_ACCESS_KEY=
+AWS_SECRET_KEY=
